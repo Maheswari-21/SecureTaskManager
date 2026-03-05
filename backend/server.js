@@ -16,7 +16,7 @@ app.use("/api/tasks",taskRoutes);
 const PORT = process.env.PORT || 5000;
 app.use(
   express.static(
-    path.join(__dirname, "..", "Front End","build")
+    path.join(__dirname, "..", "frontend","build")
   )
 );
 
@@ -25,7 +25,7 @@ app.use((req, res) => {
     path.join(
       __dirname,
       "..",
-      "Front End",
+      "frontend",
       "build",
       "index.html"
     )

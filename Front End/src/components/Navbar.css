@@ -1,0 +1,51 @@
+.navbar h3{
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+.logout-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+  display: block;
+}
+.dropdown {
+  min-width: 90px;
+}
+.logout-btn:hover {
+  background-color: #1d4ed8;
+}
+
+ .navbar {
+  height: 60px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+  width: 100%;
+  justify-content: center; 
+  position: fixed;
+  background: rgb(75, 75, 210);
+  color: white;
+}
+
+.profile {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 6px;
+}

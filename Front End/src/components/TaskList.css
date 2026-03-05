@@ -1,0 +1,103 @@
+.task-filter {
+  width: 200px;
+   padding: 10px 14px;
+  display: block;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  font-size: 14px;
+  background-color: white;
+  transition: 0.2s;
+  margin-bottom: 15px;
+}
+.task-filter:hover {
+  border-color: #2563eb;
+}
+
+.task-filter:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgb(75, 75, 210);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+}
+.modal {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+
+  width: 90%;
+  max-width: 400px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+  animation: popupFade 0.25s ease;
+}
+@keyframes popupFade {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.modal h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+.modal button {
+  padding: 8px 14px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.modal button:first-of-type {
+  background: #2563eb;
+  color: white;
+}
+.modal button:last-of-type {
+  background: #e5e7eb;
+}
+.tasklist-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasklist-card {
+  width: 100%;
+  max-width: 650px;
+  box-sizing: border-box;
+  background: white;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}

@@ -23,7 +23,7 @@ Protected Dashboard Routes
 REST API Architecture
 
 ## Tech Stack
-Frontend
+## Frontend
 
 React
 
@@ -31,7 +31,7 @@ Axios
 
 CSS
 
-Backend
+## Backend
 
 Node.js
 

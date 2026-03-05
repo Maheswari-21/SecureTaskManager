@@ -1,34 +1,85 @@
-# Secure Task Manager
+# SecureTaskManager
 
-Full Stack MERN Task Management Application.
+A full-stack MERN Task Management Application with secure user authentication and task tracking.
 
-Features:
-- User Register & Login
+## Features
+
+- User Registration
+- User Login
 - JWT Authentication
+- Protected Routes
 - Create Tasks
-- Edit Tasks
+- Update Tasks
 - Delete Tasks
-- Mark Task Completed
-- Dashboard Statistics
+- Task Status Management (Pending / Completed)
 
-Tech Stack:
-Frontend:
-React
-CSS
-
-Backend:
-Node.js
-Express.js
-MongoDB
-
-How to run:
-
-Backend
-cd Back End
-npm install
-npm run dev
+## Tech Stack
 
 Frontend
-cd Front End
-npm install
-npm start
+- React
+- Axios
+- CSS
+
+Backend
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
+- bcrypt
+
+## Project Structure
+
+securetaskmanager
+│
+├── backend
+│   ├── controllers
+│   ├── routes
+│   ├── models
+│   └── server.js
+│
+├── frontend
+│   ├── src
+│   └── public
+│
+└── README.md
+
+## Installation
+
+### 1. Clone Repository
+
+git clone https://github.com/username/securetaskmanager.git
+
+### 2. Backend Setup
+
+cd backend  
+npm install  
+npm run dev  
+
+### 3. Frontend Setup
+
+cd frontend  
+npm install  
+npm start  
+
+Application will run on:
+
+Backend  
+http://localhost:5000
+
+Frontend  
+http://localhost:3000
+
+## Screenshots
+
+Login Page  
+![Login](screenshots/login.png)
+
+Register Page  
+![Register](screenshots/register.png)
+
+Dashboard  
+![Dashboard](screenshots/dashboard.png)
+
+## Author
+
+Maheswari

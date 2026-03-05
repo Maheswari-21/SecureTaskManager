@@ -29,7 +29,8 @@ Backend
 
 ## Project Structure
 
-securetaskmanager
+
+SecureTaskManager
 │
 ├── backend
 │   ├── controllers

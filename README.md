@@ -29,7 +29,7 @@ Backend
 
 ## Project Structure
 
-
+```
 SecureTaskManager
 │
 ├── backend
@@ -43,6 +43,7 @@ SecureTaskManager
 │   └── public
 │
 └── README.md
+```
 
 ## Installation
 

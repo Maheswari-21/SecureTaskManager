@@ -1,31 +1,47 @@
-# SecureTaskManager
+## SecureTaskManager
 
-A full-stack MERN Task Management Application with secure user authentication and task tracking.
+A full-stack task management web application built with the MERN stack. The application allows users to securely register, log in, and manage their daily tasks with authentication and protected routes.
 
 ## Features
 
-- User Registration
-- User Login
-- JWT Authentication
-- Protected Routes
-- Create Tasks
-- Update Tasks
-- Delete Tasks
-- Task Status Management (Pending / Completed)
+User Registration and Login
+
+JWT Authentication
+
+Secure Password Hashing using bcrypt
+
+Create Tasks
+
+Update Tasks
+
+Delete Tasks
+
+Task Status Tracking (Pending / Completed)
+
+Protected Dashboard Routes
+
+REST API Architecture
 
 ## Tech Stack
-
 Frontend
-- React
-- Axios
-- CSS
+
+React
+
+Axios
+
+CSS
 
 Backend
-- Node.js
-- Express.js
-- MongoDB
-- JWT Authentication
-- bcrypt
+
+Node.js
+
+Express.js
+
+MongoDB
+
+JWT Authentication
+
+bcrypt
 
 ## Project Structure
 
@@ -49,7 +65,7 @@ SecureTaskManager
 
 ### 1. Clone Repository
 
-git clone https://github.com/username/securetaskmanager.git
+git clone https://github.com/Maheswari-21/securetaskmanager.git
 
 ### 2. Backend Setup
 
@@ -63,7 +79,19 @@ cd frontend
 npm install  
 npm start  
 
-Application will run on:
+## API Endpoints
+
+| Method | Endpoint           | Description   |
+| ------ | ------------------ | ------------- |
+| POST   | /api/auth/register | Register user |
+| POST   | /api/auth/login    | Login user    |
+| GET    | /api/tasks         | Get all tasks |
+| POST   | /api/tasks         | Create task   |
+| PUT    | /api/tasks/:id     | Update task   |
+| DELETE | /api/tasks/:id     | Delete task   |
+
+
+## Application will run on:
 
 Backend  
 http://localhost:5000
@@ -85,3 +113,4 @@ Dashboard
 ## Author
 
 Maheswari
+GitHub: https://github.com/Maheswari-21

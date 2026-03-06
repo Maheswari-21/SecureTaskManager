@@ -1,49 +1,45 @@
-## SecureTaskManager
+# Secure Task Manager
 
-A full-stack task management web application built with the MERN stack. The application allows users to securely register, log in, and manage their daily tasks with authentication and protected routes.
+A full-stack MERN application that allows users to securely register, login, and manage their tasks.
+This project demonstrates authentication, protected routes, and CRUD operations.
 
-## Features
+---
 
-User Registration and Login
+## 🚀 Features
 
-JWT Authentication
+* User Registration
+* Secure Login Authentication (JWT)
+* Protected Dashboard
+* Create Tasks
+* View Tasks
+* Update Task Status
+* Delete Tasks
 
-Secure Password Hashing using bcrypt
+---
 
-Create Tasks
+## 🛠 Tech Stack
 
-Update Tasks
+### Frontend
 
-Delete Tasks
+* React.js
+* CSS
 
-Task Status Tracking (Pending / Completed)
+### Backend
 
-Protected Dashboard Routes
+* Node.js
+* Express.js
 
-REST API Architecture
+### Database
 
-## Tech Stack
-## Frontend
+* MongoDB
 
-React
+### Authentication
 
-Axios
+* JWT (JSON Web Token)
 
-CSS
+---
 
-## Backend
-
-Node.js
-
-Express.js
-
-MongoDB
-
-JWT Authentication
-
-bcrypt
-
-## Project Structure
+## 📂 Project Structure
 
 ```
 SecureTaskManager
@@ -56,61 +52,101 @@ SecureTaskManager
 │
 ├── frontend
 │   ├── src
-│   └── public
+│   └── components
+│
+├── Screenshots
+│   ├── login.png
+│   ├── register.png
+│   └── task.png
 │
 └── README.md
 ```
 
-## Installation
+---
 
-### 1. Clone Repository
+## ⚙ Installation
 
-git clone https://github.com/Maheswari-21/securetaskmanager.git
+Clone the repository
 
-### 2. Backend Setup
+```
+git clone https://github.com/Maheswari-21/SecureTaskManager.git
+```
 
-cd backend  
-npm install  
-npm run dev  
+Go to project folder
 
-### 3. Frontend Setup
+```
+cd SecureTaskManager
+```
 
-cd frontend  
-npm install  
-npm start  
+Install backend dependencies
 
-## API Endpoints
+```
+cd backend
+npm install
+```
 
-| Method | Endpoint           | Description   |
-| ------ | ------------------ | ------------- |
-| POST   | /api/auth/register | Register user |
-| POST   | /api/auth/login    | Login user    |
-| GET    | /api/tasks         | Get all tasks |
-| POST   | /api/tasks         | Create task   |
-| PUT    | /api/tasks/:id     | Update task   |
-| DELETE | /api/tasks/:id     | Delete task   |
+Install frontend dependencies
 
+```
+cd ../frontend
+npm install
+```
 
-## Application will run on:
+Run the backend
 
-Backend  
-http://localhost:5000
+```
+npm start
+```
 
-Frontend  
+Run the frontend
+
+```
+npm start
+```
+
+---
+
+## 🌐 Application URL
+
+```
 http://localhost:3000
+```
 
-## Screenshots
+---
 
-Login Page  
-![SecureTaskManager](screenshots/login.png)
+## 📸 Screenshots
 
-Register Page  
-![SecureTaskManager](screenshots/register.png)
+### Login Page
 
-Dashboard  
-![SecureTaskManager](screenshots/dashboard.png)
+<p align="center">
+  <img src="Screenshots/login.png" width="700">
+</p>
 
-## Author
+### Register Page
+
+<p align="center">
+  <img src="Screenshots/register.png" width="700">
+</p>
+
+### Task Dashboard
+
+<p align="center">
+  <img src="Screenshots/task.png" width="700">
+</p>
+
+---
+
+## 🔐 Authentication Flow
+
+1. User registers an account
+2. User logs in
+3. JWT token generated
+4. Token used to access protected routes
+
+---
+
+## 👩‍💻 Author
 
 Maheswari
+
 GitHub: https://github.com/Maheswari-21

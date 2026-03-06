@@ -102,13 +102,13 @@ http://localhost:3000
 ## Screenshots
 
 Login Page  
-![Login](screenshots/login.png)
+![SecureTaskManager](screenshots/login.png)
 
 Register Page  
-![Register](screenshots/register.png)
+![SecureTaskManager](screenshots/register.png)
 
 Dashboard  
-![Dashboard](screenshots/dashboard.png)
+![SecureTaskManager](screenshots/dashboard.png)
 
 ## Author
 

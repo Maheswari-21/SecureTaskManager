@@ -1,6 +1,6 @@
 import axios from "axios";
 const API = axios.create({
-  baseURL: "http://localhost:5000/api"
+  baseURL: "https://securetaskmanager-api-66bj.onrender.com/api"
 });
  
 export const loginUser = (data) =>

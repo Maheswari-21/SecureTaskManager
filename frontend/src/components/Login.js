@@ -1,31 +1,25 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/auth.css";
-import axios from "axios";
-
+import { loginUser } from "../api/authApi";
 function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
   const navigate = useNavigate();
-
   const handleLogin = async () => {
-    try {
-      const res = await axios.post(
-        "https://securetaskmanager-api-66bj.onrender.com/api",
-        { email, password }
-      );
+  try {
+    const res = await loginUser({ email, password });
 
-      localStorage.setItem("token", res.data.token);
-      localStorage.setItem("user", JSON.stringify(res.data.user));
-      navigate("/dashboard", { replace: true });
+    localStorage.setItem("token", res.data.token);
+    localStorage.setItem("user", JSON.stringify(res.data.user));
+    navigate("/dashboard", { replace: true });
 
-    } catch (err) {
-  setErrorMsg("Invalid email or password");
-}
-  };
-
+  } catch (err) {
+    setErrorMsg("Invalid email or password");
+  }
+};
   return (
     <div className="auth-container">
       <div className="auth-card">

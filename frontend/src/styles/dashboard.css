@@ -54,3 +54,18 @@
   align-items: center;
   background: #f4f6f8;
 }
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+}
+
+.task-container{
+flex-direction:column;
+}
+
+.task-card{
+width:100%;
+}
+
+}

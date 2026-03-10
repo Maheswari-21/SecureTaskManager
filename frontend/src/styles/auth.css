@@ -1,4 +1,4 @@
-.auth-container {
+.auth-container { 
   display: flex;
   min-height: 100vh;
   justify-content: center;
@@ -6,18 +6,22 @@
   background: #f4f6f8;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .auth-card {
   width: 350px;
+  max-width: 90%;
   background: white;
   padding: 35px;
   border-radius: 10px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
   text-align: center;
 }
+
 .auth-card h2 {
   margin-bottom: 20px;
   color: #333;
 }
+
 .auth-input {
   width: 100%;
   padding: 12px;
@@ -32,6 +36,7 @@
 .auth-input:focus {
   border-color: #007bff;
 }
+
 .auth-btn {
   width: 100%;
   padding: 12px;
@@ -44,6 +49,10 @@
   transition: 0.3s;
 }
 
+.auth-btn:hover{
+  background:#0056b3;
+}
+
 .auth-link {
   margin-top: 15px;
   font-size: 14px;
@@ -54,9 +63,7 @@
   cursor: pointer;
   font-weight: bold;
 }
-.auth-btn:hover{
-  background:#0056b3;
-}
+
 .auth-switch{
   margin-top:15px;
   font-size:14px;
@@ -71,6 +78,7 @@
 .auth-switch a:hover{
   text-decoration:underline;
 }
+
 .success-msg {
   background: #e6ffed;
   color: #0f5132;
@@ -79,12 +87,129 @@
   margin-bottom: 10px;
   font-weight: 500;
 }
+
 .error-msg {
   color: #dc2626;   
   font-size: 14px;
   margin-bottom: 10px;
   text-align: left;
 }
+
 .auth-input.error {
   border: 1px solid #dc2626;
+}
+
+/* TASK */
+
+.task-stats {
+  margin: 25px 0;   
+  text-align: center;
+  font-weight: 600;
+  color: #444;
+}
+
+.task-title.complete{
+  text-decoration: line-through;
+  color: gray;
+}
+
+.btn{
+  margin-left: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-complete{
+  background: green;
+  color: white;
+}
+
+.btn-edit{
+  background:rgb(75, 75, 210);
+  color: white;
+}
+
+.btn-delete{
+  background: rgb(75, 75, 210);
+  color: white;
+}
+
+/* DASHBOARD */
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #f5f6fa;
+  overflow-y: auto;
+}
+
+.dashboard-layout {
+  display: flex;
+  margin-top: 60px;   
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dashboard-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+}
+
+.dashboard-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f8;
+}
+
+@media (max-width: 768px) {
+
+  .auth-container{
+    padding:20px;
+  }
+
+  .auth-card{
+    width:100%;
+    padding:25px;
+  }
+
+  .dashboard-layout{
+    flex-direction:column;
+    padding:10px;
+  }
+
+  .dashboard-content{
+    width:100%;
+    padding:10px;
+  }
+
+  .btn{
+    margin-top:5px;
+  }
+
+}
+
+@media (max-width:480px){
+
+  .auth-card h2{
+    font-size:20px;
+  }
+
+  .auth-input{
+    font-size:13px;
+  }
+
+  .auth-btn{
+    font-size:14px;
+  }
+
+  .task-stats{
+    font-size:14px;
+  }
+
 }

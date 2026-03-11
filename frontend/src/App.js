@@ -1,6 +1,6 @@
-
+import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import React, { useState, useEffect, Suspense } from "react";
+
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Dashboard from "./pages/Dashboard";
@@ -10,23 +10,11 @@ import PublicRoute from "./components/PublicRoute";
 function App() {
 
   const token = localStorage.getItem("token");
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 300);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <div>Loading App...</div>;
-  }
 
   return (
     <BrowserRouter>
 
-      <Suspense fallback={<div>Loading Page...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
 
         <Routes>
 

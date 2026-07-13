@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://securetaskmanager-1.onrender.com"
+  baseURL: "https://your-backend-url.onrender.com/api",
+  withCredentials: true,
 });
 
 export const loginUser = (data) =>

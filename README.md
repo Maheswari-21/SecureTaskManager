@@ -1,152 +1,103 @@
-# Secure Task Manager
+# AI Resume Analyzer 
 
-A full-stack MERN application that allows users to securely register, login, and manage their tasks.
-This project demonstrates authentication, protected routes, and CRUD operations.
+An AI-powered Resume Analyzer web application that helps users analyze their resumes, identify skills, calculate match scores, and get useful career insights.
 
----
+## Features
 
-## 🚀 Features
+- Upload Resume PDF
+- Extract resume text automatically
+- AI-based resume analysis
+- Detect technical skills
+- Identify matched skills
+- Find missing skills
+- Generate resume match score
+- User registration and login
+- Secure authentication using JWT
 
-* User Registration
-* Secure Login Authentication (JWT)
-* Protected Dashboard
-* Create Tasks
-* View Tasks
-* Update Task Status
-* Delete Tasks
-
----
-
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 
-* React.js
-* CSS
+- React.js
+- Tailwind CSS
+- React Router
+- Axios
 
 ### Backend
 
-* Node.js
-* Express.js
+- Node.js
+- Express.js
+- Multer
+- PDF Parser
+- JWT Authentication
 
 ### Database
 
-* MongoDB
+- MongoDB
 
-### Authentication
+### AI Integration
 
-* JWT (JSON Web Token)
+- Cohere API
 
----
+## Project Structure
 
-## 📂 Project Structure
+```text
+AI-Resume-Analyzer
 
-```
-SecureTaskManager
+├── client
+│   └── React Frontend
 │
-├── backend
-│   ├── controllers
-│   ├── routes
-│   ├── models
-│   └── server.js
+├── server
+│   └── Node.js Backend
 │
-├── frontend
-│   ├── src
-│   └── components
-│
-├── Screenshots
-│   ├── login.png
-│   ├── register.png
-│   └── task.png
-│
+├── .gitignore
 └── README.md
 ```
 
----
+## Installation
 
-## ⚙ Installation
+### Clone Repository
 
-Clone the repository
-
-```
-git clone https://github.com/Maheswari-21/SecureTaskManager.git
+```bash
+git clone your-repository-link
 ```
 
-Go to project folder
+### Frontend Setup
 
-```
-cd SecureTaskManager
-```
-
-Install backend dependencies
-
-```
-cd backend
+```bash
+cd client
 npm install
-```
-
-Install frontend dependencies
-
-```
-cd ../frontend
-npm install
-```
-
-Run the backend
-
-```
 npm start
 ```
 
-Run the frontend
+### Backend Setup
 
-```
-npm start
-```
-
----
-
-## 🌐 Application URL
-
-```
-http://localhost:3000
+```bash
+cd server
+npm install
+npm run dev
 ```
 
----
+### Environment Variables
 
-## 📸 Screenshots
+Create a `.env` file inside the server folder:
 
-### Login Page
+```env
+PORT=5000
+MONGO_URI=your_mongodb_url
+JWT_SECRET=your_secret_key
+AI_API_KEY=your_api_key
+```
 
-<p align="center">
-  <img src="Screenshots/login.png" width="700">
-</p>
+## Application Flow
 
-### Register Page
+1. User creates an account
+2. User uploads resume PDF
+3. Backend extracts resume content
+4. AI analyzes resume data
+5. Skills and score are generated
+6. User views analysis result
 
-<p align="center">
-  <img src="Screenshots/register.png" width="700">
-</p>
-
-### Task Dashboard
-
-<p align="center">
-  <img src="Screenshots/task.png" width="700">
-</p>
-
----
-
-## 🔐 Authentication Flow
-
-1. User registers an account
-2. User logs in
-3. JWT token generated
-4. Token used to access protected routes
-
----
-
-## 👩‍💻 Author
+## Author
 
 Maheswari
-
-GitHub: https://github.com/Maheswari-21
